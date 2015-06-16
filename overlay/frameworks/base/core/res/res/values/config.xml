@@ -373,7 +373,7 @@
     <bool name="config_wifiApFirmwareReload">true</bool>
 
     <!-- Boolean indicating whether the wifi chipset has dual frequency band support -->
-    <bool translatable="false" name="config_wifi_dual_band_support">false</bool>
+    <bool translatable="false" name="config_wifi_dual_band_support">true</bool>
 
     <!-- Device type information conforming to Annex B format in WiFi Direct specification.
          The default represents a dual-mode smartphone -->
@@ -489,7 +489,7 @@
     <integer translatable="false" name="config_wifi_driver_stop_delay">120000</integer>
 
     <!-- Wifi driver supports batched scan -->
-    <bool translatable="false" name="config_wifi_batched_scan_supported">false</bool>
+    <bool translatable="false" name="config_wifi_batched_scan_supported">true</bool>
 
     <!-- Flag indicating whether the we should enable the automatic brightness in Settings.
          Software implementation will be used if config_hardware_auto_brightness_available is not set -->
@@ -658,7 +658,7 @@
             2 - Really go to sleep (don't doze)
             3 - Really go to sleep and go home (don't doze)
     -->
-    <integer name="config_shortPressOnPowerBehavior">1</integer>
+    <integer name="config_shortPressOnPowerBehavior">2</integer>
 
     <!-- Control the behavior when the user double presses the power button.
             0 - Nothing
@@ -829,7 +829,7 @@
     <bool name="config_enableTranslucentDecor">true</bool>
 
     <!-- Is the device capable of hot swapping an UICC Card -->
-    <bool name="config_hotswapCapable">false</bool>
+    <bool name="config_hotswapCapable">true</bool>
 
     <!-- Enable puk unlockscreen by default.
          If unlock screen is disabled, the puk should be unlocked through Emergency Dialer -->
@@ -1278,7 +1278,7 @@
 
     <!-- Boolean indicating if restoring network selection should be skipped -->
     <!-- The restoring is handled by modem if it is true-->
-    <bool translatable="false" name="skip_restoring_network_selection">false</bool>
+    <bool translatable="false" name="skip_restoring_network_selection">true</bool>
 
     <!-- Maximum number of database connections opened and managed by framework layer
          to handle queries on each database when using Write-Ahead Logging. -->
@@ -1613,7 +1613,7 @@
     </integer-array>
 
     <!-- Set to true to add links to Cell Broadcast app from Settings and MMS app. -->
-    <bool name="config_cellBroadcastAppLinks">false</bool>
+    <bool name="config_cellBroadcastAppLinks">true</bool>
 
     <!-- Boolean indicating if RADIO POWER OFF should be skipped on receiving SIM REFRESH with RESET-->
     <!-- This will be handled by modem if it is true-->
