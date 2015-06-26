@@ -1060,10 +1060,10 @@
          be picked. Anyone who wants to disable the overlay mechanism can set it
          to false.
          -->
-    <bool name="config_enableNetworkLocationOverlay" translatable="false">true</bool>
+    <bool name="config_enableNetworkLocationOverlay" translatable="false">false</bool>
     <!-- Package name providing network location support. Used only when
          config_enableNetworkLocationOverlay is false. -->
-    <string name="config_networkLocationProviderPackageName" translatable="false">@null</string>
+    <string name="config_networkLocationProviderPackageName" translatable="false">com.qualcomm.location</string>
 
     <!-- Whether to enable fused location provider overlay which allows fused
          location provider to be replaced by an app at run-time. When disabled,
@@ -1074,10 +1074,10 @@
          be picked. Anyone who wants to disable the overlay mechanism can set it
          to false.
          -->
-    <bool name="config_enableFusedLocationOverlay" translatable="false">true</bool>
+    <bool name="config_enableFusedLocationOverlay" translatable="false">false</bool>
     <!-- Package name providing fused location support. Used only when
          config_enableFusedLocationOverlay is false. -->
-    <string name="config_fusedLocationProviderPackageName" translatable="false">com.android.location.fused</string>
+    <string name="config_fusedLocationProviderPackageName" translatable="false">com.qualcomm.location</string>
 
     <!-- Whether to enable Hardware FLP overlay which allows Hardware FLP to be
          replaced by an app at run-time. When disabled, only the
@@ -1686,7 +1686,7 @@
          * The remote submix module "audio.r_submix.default" must be installed on the device.
          * The device must be provisioned with HDCP keys (for protected content).
     -->
-    <bool name="config_enableWifiDisplay">false</bool>
+    <bool name="config_enableWifiDisplay">true</bool>
 
     <!-- When true use the linux /dev/input/event subsystem to detect the switch changes
          on the headphone/microphone jack. When false use the older uevent framework. -->
@@ -1705,7 +1705,7 @@
          This flag controls whether the {@link Display#FLAG_SUPPORTS_PROTECTED_BUFFERS}
          flag is set for wifi displays.
     -->
-    <bool name="config_wifiDisplaySupportsProtectedBuffers">false</bool>
+    <bool name="config_wifiDisplaySupportsProtectedBuffers">true</bool>
 
     <!-- Whether camera shutter sound is forced or not  (country specific). -->
     <bool name="config_camera_sound_forced">false</bool>
@@ -2369,8 +2369,8 @@
     <!-- Default value for proximity check on screen wake
          NOTE ! - Enable for devices that have a fast response proximity sensor (ideally < 300ms)
     -->
-    <bool name="config_proximityCheckOnWake">false</bool>
-    <integer name="config_proximityCheckTimeout">250</integer>
+    <bool name="config_proximityCheckOnWake">true</bool>
+    <integer name="config_proximityCheckTimeout">100</integer>
 
     <!-- The list of components which should be automatically disabled. -->
     <string-array name="config_disabledComponents" translatable="false">
