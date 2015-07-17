@@ -95,6 +95,20 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #camera
 PRODUCT_PACKAGES += camera.msm8974
 
+# Live Wallpapers
+PRODUCT_PACKAGES += \
+        LiveWallpapers \
+        LiveWallpapersPicker \
+        VisualizationWallpapers	
+	
+# Camera
+PRODUCT_PACKAGES += \
+    camera.msm8974
+
+# Camera api    
+PRODUCT_PROPERTY_OVERRIDES += \
+    camera2.portability.force_api=1
+
 # Power
 PRODUCT_PACKAGES += \
     power.msm8974
