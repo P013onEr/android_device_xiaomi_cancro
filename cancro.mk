@@ -14,10 +14,6 @@ PRODUCT_CHARACTERISTICS := nosdcard
 # USB
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 	persist.sys.usb.config=mtp
-    
-# Camera Api    
-PRODUCT_PROPERTY_OVERRIDES += \
-    camera2.portability.force_api=1
 
 # set USB OTG enabled to add support for USB storage type
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -91,9 +87,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.rild.nitz_short_ons_1="" \
     persist.rild.nitz_short_ons_2="" \
     persist.rild.nitz_short_ons_3=""
-
-#camera
-PRODUCT_PACKAGES += camera.msm8974
 
 # Live Wallpapers
 PRODUCT_PACKAGES += \
